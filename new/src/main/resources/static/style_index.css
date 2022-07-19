@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+h1{
+    color: black;
+    text-align: center;
+
+
+}
+select{
+    margin: 20px;
+    width: 150px;
+    height: 25px;
+    border-radius: 20px;
+}
+body{
+    background-image: url(imagem_base_do_index.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+.box,form{
+    gap: 20px;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+input{
+    width: 250px;
+    height: 25px;
+    border-radius: 30px;
+    padding: 0 15px 0 15px;
+}
+button{
+    background-color: darksalmon;
+    width: 250px;
+    height: 25px;
+    border-radius: 30px;
+    padding: 0 15px 0 15px;
+}
