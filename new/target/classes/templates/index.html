@@ -1,12 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <title>Página Principal</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criando a Tabela</title>
+    <link rel="stylesheet" href="./style_index.css">
 </head>
 <body>
-    <h1>Cole aqui a String</h1>
-    <input placeholder="text">
-    <button>Submit</button>
+
+
+    <div class="box">
+        <h1>CRIE SUA TABELA AQUI</h1>
+        <select name="opcoes">
+            <option value="tipoDado">Tipo de Dado</option>
+            <option value="valoresSaida">Valor de Saída</option>
+            <option value="valoresEntrada">Valor de Entrada</option>
+        </select>
+        <form action="">
+            <input type="" class="nome" name="nome" placeholder="Digite o nome da despesa">
+            <input type="number" min="0" max="1000000" step=".01" class="valor" placeholder="Valor:">
+            <input type="date" class="email" name="data" placeholder="Vencimento:">
+            <button>Adicionar</button>
+            <button>Finalizar</button>
+        </form>
+
+
+
+    </div>
+
 </body>
 </html>

@@ -8,13 +8,13 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("/")
+@RequestMapping("/index")
 public class IndexController {
 
     @Autowired
     UsuarioRepostory dao;
 
-    @GetMapping("/")
+    @GetMapping("/index")
     public String inicio(){
         return "index";
     }
