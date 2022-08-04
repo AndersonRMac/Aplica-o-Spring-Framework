@@ -12,6 +12,10 @@ public class Saidas {
     private String nome;
     private Integer valor;
 
+    @ManyToOne
+    @JoinColumn(name = "usuario_id")
+    private Usuario usuario;
+
     public Saidas(){}
 
     public Long getId() {

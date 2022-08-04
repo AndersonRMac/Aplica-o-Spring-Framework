@@ -13,6 +13,10 @@ public class Entradas {
     private String nome;
     private Integer valor;
 
+    @ManyToOne  // porque um usuario_id pode receber varios valores
+    @JoinColumn(name = "usuario_id")
+    private Usuario usuario;
+
     public Entradas() {
 
     }
