@@ -20,15 +20,10 @@ public class LoginController {
     }
 
     @PostMapping("/login")
-    public Usuario salvaUsuario (@RequestBody Usuario newUser){
+    public String salvaUsuario (@RequestBody Usuario newUser){
         Usuario resultado = dao.save(newUser);
-        return resultado;
+        return "login";
     }
 
-    @GetMapping("/{id}")
-    public Usuario finById (@PathVariable Long id){
-        Usuario resultado = dao.findById(id).get();
-        return resultado;
-    }
+
 }
-//ver anotações do spring validation
