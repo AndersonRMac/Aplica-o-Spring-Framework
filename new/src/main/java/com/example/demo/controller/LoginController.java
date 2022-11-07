@@ -19,10 +19,10 @@ public class LoginController {
         return "login";
     }
 
-    @PostMapping("/login")
-    public String salvaUsuario (@RequestBody Usuario newUser){
-        Usuario resultado = dao.save(newUser);
-        return "login";
+    @RequestMapping(value = "/login", method = RequestMethod.POST)
+    public String salvaUsuario (Usuario newUser){
+        dao.save(newUser);
+        return "redirect:/login";
     }
 
 
